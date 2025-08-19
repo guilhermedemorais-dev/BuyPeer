@@ -14,6 +14,7 @@ import {page} from "./modules/page";
 import {analytic} from "./modules/analytic";
 import {analyticSection} from "./modules/analyticSection";
 import {theme} from "./modules/theme";
+import {appearance} from "./modules/appearance";
 import {slider} from "./modules/slider";
 import {currency} from "./modules/currency";
 import {site} from "./modules/site";
@@ -126,6 +127,7 @@ export default new createStore({
         analytic,
         analyticSection,
         theme,
+        appearance,
         slider,
         currency,
         site,

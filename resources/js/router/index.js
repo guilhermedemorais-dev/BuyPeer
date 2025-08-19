@@ -7,6 +7,7 @@ import NotFoundComponent from "../components/exception/NotFoundComponent.vue";
 import store from "../store";
 import authRoutes from "./modules/authRoutes";
 import settingRoutes from "./modules/settingRoutes";
+import appearanceRoutes from "./modules/appearanceRoutes";
 import productsRoutes from "./modules/productsRoutes";
 import frontendRoutes from "./modules/frontendRoutes";
 import profileRoutes from "./modules/profileRoutes";
@@ -61,6 +62,7 @@ const routes = baseRoutes.concat(
     frontendRoutes,
     authRoutes,
     settingRoutes,
+    appearanceRoutes,
     profileRoutes,
     productsRoutes,
     administratorRoutes,

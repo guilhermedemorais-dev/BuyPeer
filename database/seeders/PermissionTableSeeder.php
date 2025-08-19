@@ -574,6 +574,14 @@ class PermissionTableSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+            [
+                'title'      => 'Appearance',
+                'name'       => 'appearance',
+                'guard_name' => 'sanctum',
+                'url'        => 'appearance',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ];
 
         $permissions = AppLibrary::associativeToNumericArrayBuilder($permissions);

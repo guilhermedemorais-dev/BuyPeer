@@ -13,7 +13,7 @@ use App\Models\ProductTax;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
-use Dipokhalder\EnvEditor\EnvEditor;
+
 use Picqer\Barcode\BarcodeGeneratorJPG;
 
 class ProductTableSeeder extends Seeder
@@ -2833,8 +2833,7 @@ class ProductTableSeeder extends Seeder
             ]
         ];
 
-        $envService = new EnvEditor();
-        if ($envService->getValue('DEMO') && $envService->getValue('DISPLAY_TYPE') == 'fashion') {
+        if (env('DEMO', false) && env('DISPLAY_TYPE') == 'fashion') {
             foreach ($fashionProducts as $fashionProduct) {
                 $sku = rand(100, 999) .date('is');
                 $productObject = Product::create([

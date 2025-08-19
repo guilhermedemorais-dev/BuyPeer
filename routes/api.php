@@ -17,6 +17,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Admin\StateController;
 use App\Http\Controllers\Admin\StockController;
 use App\Http\Controllers\Admin\ThemeController;
+use App\Http\Controllers\Admin\AppearanceController;
 use App\Http\Controllers\Auth\SignupController;
 use App\Http\Controllers\Admin\CouponController;
 use App\Http\Controllers\Admin\DamageController;
@@ -208,6 +209,18 @@ Route::prefix('admin')->name('admin.')->middleware(['auth:sanctum'])->group(func
         Route::prefix('theme')->name('theme.')->group(function () {
             Route::get('/', [ThemeController::class, 'index']);
             Route::post('/', [ThemeController::class, 'update']);
+        });
+
+        Route::prefix('appearance')->name('appearance.')->group(function () {
+            Route::get('/', [AppearanceController::class, 'index']);
+            Route::post('/', [AppearanceController::class, 'update']);
+            Route::post('/restore', [AppearanceController::class, 'restore']);
+        });
+        
+        Route::prefix('settings/theme-style')->name('theme-style.')->group(function () {
+            Route::get('/', [AppearanceController::class, 'index']);
+            Route::post('/', [AppearanceController::class, 'update']);
+            Route::post('/restore', [AppearanceController::class, 'restore']);
         });
 
         Route::prefix('pwa')->name('pwa')->group(function () {

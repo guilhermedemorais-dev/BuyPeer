@@ -41,4 +41,5 @@ Route::prefix('payment')->name('payment.')->middleware(['installed'])->group(fun
     Route::get('/successful/{order}', [PaymentController::class, 'successful'])->name('successful');
 });
 
-Route::get('/{any}', [RootController::class, 'index'])->middleware(['installed'])->where(['any' => '.*']);
+// Rota catch-all apenas para rotas que não começam com 'api/'
+Route::get('/{any}', [RootController::class, 'index'])->middleware(['installed'])->where(['any' => '^(?!api/).*']);

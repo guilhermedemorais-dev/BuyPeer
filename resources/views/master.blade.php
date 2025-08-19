@@ -23,6 +23,13 @@
     <!-- CUSTOM STYLE -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('themes/default/css/custom.css') }}">
+    
+    <!-- CUSTOM THEME COLORS -->
+    @if(isset($customCss))
+    <style>
+        {!! $customCss !!}
+    </style>
+    @endif
     <!-- PAGE TITLE -->
     <title>{{ Settings::group('company')->get('company_name') }}</title>
 

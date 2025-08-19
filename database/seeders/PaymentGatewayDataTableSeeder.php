@@ -12,7 +12,9 @@ use Illuminate\Database\Seeder;
 class PaymentGatewayDataTableSeeder extends Seeder
 {
 
-    public array $gateways = [
+    public function getGateways(): array
+    {
+        return [
         [
             "slug"    => "paypal",
             "status"  => 5,
@@ -448,41 +450,15 @@ class PaymentGatewayDataTableSeeder extends Seeder
                     "value" => Activity::ENABLE,
                 ],
             ]
-            ],
-            [
-                "slug" => "twocheckout",
-                "status" => Activity::ENABLE,
-                "options" => [
-                    
-                    [
-                        "option" => 'twocheckout_seller_id',
-                        "value"  => '255390680365',
-                    ],
-                    [
-                        "option" => 'twocheckout_secret_key',
-                        "value"  => 'iF^(4!VoE|NQqn+~v0gp',
-                    ],
-                    [
-                        "option" => 'twocheckout_buy_link_secret_word',
-                        "value"  => '*-x?QhYtu#Hc%6$nRd?WJGk2F!FcH6%**bT7vzgBf?3d2-sJeFHd-QATyY?vfmWQ',
-                    ],
-                    [
-                        "option" => 'twocheckout_mode',
-                        "value"  => GatewayMode::SANDBOX,
-                    ],
-                    [
-                        "option" => 'twocheckout_status',
-                        "value"  => Activity::ENABLE,
-                    ],
-                ]
-            ]
+        ]
     ];
+    }
 
     public function run(): void
     {
         $envService = new EnvEditor();
         if ($envService->getValue('DEMO')) {
-            foreach ($this->gateways as $gateway) {
+            foreach ($this->getGateways() as $gateway) {
                 $payment = PaymentGateway::where(['slug' => $gateway['slug']])->first();
                 if ($payment) {
                     $payment->status = $gateway['status'];

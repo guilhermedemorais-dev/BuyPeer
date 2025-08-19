@@ -175,4 +175,160 @@ class ProductService
             throw new Exception('Failed to get top products: ' . $e->getMessage());
         }
     }
+
+    /**
+     * Get product with relations for frontend
+     */
+    public function showWithRelation(Product $product, Request $request): Product
+    {
+        try {
+            return $product->load(['category', 'brand', 'unit', 'images', 'variations']);
+        } catch (Exception $e) {
+            throw new Exception('Failed to get product with relations: ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Get product with trashed for admin
+     */
+    public function showWithTrashed(Product $product, Request $request): Product
+    {
+        try {
+            return $product->load(['category', 'brand', 'unit', 'images', 'variations']);
+        } catch (Exception $e) {
+            throw new Exception('Failed to get product with trashed: ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Get most popular products
+     */
+    public function mostPopularProducts(Request $request): LengthAwarePaginator
+    {
+        try {
+            $perPage = $request->get('per_page', 20);
+            
+            $query = Product::with(['category', 'brand', 'unit'])
+                           ->where('status', Status::ACTIVE);
+
+            // Se existir coluna total_sold, ordenar por ela
+            $columns = \Schema::getColumnListing((new Product())->getTable());
+            if (in_array('total_sold', $columns)) {
+                $query->orderByDesc('total_sold');
+            } else {
+                $query->orderByDesc('created_at');
+            }
+
+            return $query->paginate($perPage);
+        } catch (Exception $e) {
+            throw new Exception('Failed to get most popular products: ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Get category wise products
+     */
+    public function categoryWiseProducts(Request $request): \Illuminate\Database\Eloquent\Collection
+    {
+        try {
+            $categoryId = $request->get('category_id');
+            
+            $query = Product::with(['category', 'brand', 'unit'])
+                           ->where('status', Status::ACTIVE);
+
+            if ($categoryId) {
+                $query->where('category_id', $categoryId);
+            }
+
+            return $query->orderBy('created_at', 'desc')->get();
+        } catch (Exception $e) {
+            throw new Exception('Failed to get category wise products: ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Get flash sale products
+     */
+    public function flashSaleProducts(Request $request): LengthAwarePaginator
+    {
+        try {
+            $perPage = $request->get('per_page', 20);
+            
+            $query = Product::with(['category', 'brand', 'unit'])
+                           ->where('status', Status::ACTIVE);
+
+            // Por enquanto, retorna produtos em destaque como flash sale
+            // Você pode adicionar lógica específica para flash sales aqui
+            $query->where('is_featured', Activity::ENABLE);
+
+            return $query->orderBy('created_at', 'desc')->paginate($perPage);
+        } catch (Exception $e) {
+            throw new Exception('Failed to get flash sale products: ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Get offer products
+     */
+    public function offerProducts(Request $request): LengthAwarePaginator
+    {
+        try {
+            $perPage = $request->get('per_page', 20);
+            
+            $query = Product::with(['category', 'brand', 'unit'])
+                           ->where('status', Status::ACTIVE);
+
+            // Por enquanto, retorna produtos em destaque como ofertas
+            // Você pode adicionar lógica específica para ofertas aqui
+            $query->where('is_featured', Activity::ENABLE);
+
+            return $query->orderBy('created_at', 'desc')->paginate($perPage);
+        } catch (Exception $e) {
+            throw new Exception('Failed to get offer products: ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Get wishlist products
+     */
+    public function wishlistProducts(Request $request): LengthAwarePaginator
+    {
+        try {
+            $perPage = $request->get('per_page', 20);
+            
+            $query = Product::with(['category', 'brand', 'unit'])
+                           ->where('status', Status::ACTIVE);
+
+            // Por enquanto, retorna produtos em destaque como wishlist
+            // Você pode adicionar lógica específica para wishlist aqui
+            $query->where('is_featured', Activity::ENABLE);
+
+            return $query->orderBy('created_at', 'desc')->paginate($perPage);
+        } catch (Exception $e) {
+            throw new Exception('Failed to get wishlist products: ' . $e->getMessage());
+        }
+    }
+
+    /**
+     * Get related products
+     */
+    public function relatedProducts(Product $product, Request $request): LengthAwarePaginator
+    {
+        try {
+            $perPage = $request->get('per_page', 20);
+            
+            $query = Product::with(['category', 'brand', 'unit'])
+                           ->where('status', Status::ACTIVE)
+                           ->where('id', '!=', $product->id);
+
+            // Produtos da mesma categoria
+            if ($product->category_id) {
+                $query->where('category_id', $product->category_id);
+            }
+
+            return $query->orderBy('created_at', 'desc')->paginate($perPage);
+        } catch (Exception $e) {
+            throw new Exception('Failed to get related products: ' . $e->getMessage());
+        }
+    }
 }

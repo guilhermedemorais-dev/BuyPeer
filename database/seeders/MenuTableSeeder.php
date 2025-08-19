@@ -349,17 +349,81 @@ class MenuTableSeeder extends Seeder
                     [
                         'name'       => 'Settings',
                         'language'   => 'settings',
-                        'url'        => 'settings',
+                        'url'        => '#',
                         'icon'       => 'lab lab-line-settings',
                         'priority'   => 100,
                         'status'     => 1,
                         'created_at' => now(),
-                        'updated_at' => now()
+                        'updated_at' => now(),
+                        'children'   => [
+                            [
+                                'name'       => 'Logo',
+                                'language'   => 'theme',
+                                'url'        => 'settings',
+                                'icon'       => 'lab lab-line-logo',
+                                'priority'   => 100,
+                                'status'     => 1,
+                                'created_at' => now(),
+                                'updated_at' => now()
+                            ],
+                            [
+                                'name'       => 'Cores & Estilo',
+                                'language'   => 'theme_style',
+                                'url'        => 'settings/theme-style',
+                                'icon'       => 'lab lab-line-palette',
+                                'priority'   => 95,
+                                'status'     => 1,
+                                'created_at' => now(),
+                                'updated_at' => now()
+                            ]
+                        ]
                     ]
                 ]
             ]
         ];
 
-        Menu::insert(AppLibrary::associativeToNumericArrayBuilder($menus));
+        // Processar menus com suporte a 3 níveis
+        $processedMenus = [];
+        $i = 1;
+        
+        foreach ($menus as $menu) {
+            if (isset($menu['children'])) {
+                $children = $menu['children'];
+                unset($menu['children']);
+                
+                $menu['parent'] = 0;
+                $processedMenus[$i] = $menu;
+                $parentId = $i;
+                $i++;
+                
+                foreach ($children as $child) {
+                    if (isset($child['children'])) {
+                        $grandChildren = $child['children'];
+                        unset($child['children']);
+                        
+                        $child['parent'] = $parentId;
+                        $processedMenus[$i] = $child;
+                        $grandParentId = $i;
+                        $i++;
+                        
+                        foreach ($grandChildren as $grandChild) {
+                            $grandChild['parent'] = $grandParentId;
+                            $processedMenus[$i] = $grandChild;
+                            $i++;
+                        }
+                    } else {
+                        $child['parent'] = $parentId;
+                        $processedMenus[$i] = $child;
+                        $i++;
+                    }
+                }
+            } else {
+                $menu['parent'] = 0;
+                $processedMenus[$i] = $menu;
+                $i++;
+            }
+        }
+        
+        Menu::insert($processedMenus);
     }
 }
