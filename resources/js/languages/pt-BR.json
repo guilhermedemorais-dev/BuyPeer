@@ -98,10 +98,10 @@
         "pwa": "Aplicativo Web",
         "progressive_web_app": "Aplicativo Web Progressivo",
         "whatsapp_order_setup": "Configuração de Pedidos pelo WhatsApp",
-        "appearance": "Cores & Estilo",
-        "theme_style": "Cores & Estilo",
+        "appearance": "Tema & Estilo",
+        "theme_style": "Tema & Estilo",
         "settings": "Configurações",
-        "settings.theme-style": "Configurações / Cores & Estilo"
+        "settings.theme-style": "Configurações / Tema & Estilo"
     },
     "label": {
         "license_code": "Código da Licença",
