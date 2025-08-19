@@ -36,3 +36,8 @@ auth.json
 *credentials*.json
 *secret*.json
 *private*.json
+public/js/
+public/css/
+public/build/
+*.map
+storage/*.log
