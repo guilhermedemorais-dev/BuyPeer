@@ -77,4 +77,12 @@ if (localStorage.getItem('vuex')) {
         store.dispatch('bootstrap').catch(()=>{});
     }
 }
-app.mount('#app');
+// Montagem resiliente: usa #admin-app se existir; senão #app
+const mountTarget = document.querySelector('#admin-app') ? '#admin-app' : '#app';
+try {
+  // eslint-disable-next-line no-console
+  console.log('[BuyPeer] boot app on', mountTarget);
+  app.mount(mountTarget);
+} catch (e) {
+  console.error('[BuyPeer] boot failed', e);
+}

@@ -13,14 +13,21 @@ var filesToCache = [
     '/images/icons/icon-512x512.png',
 ];
 
-// Cache on install
+// Desabilitado temporariamente para evitar cache agressivo no admin durante debug
 self.addEventListener("install", event => {
     this.skipWaiting();
+    // Limpar caches antigos durante debug
     event.waitUntil(
-        caches.open(staticCacheName)
-            .then(cache => {
-                return cache.addAll(filesToCache);
-            })
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(cacheName => caches.delete(cacheName))
+            );
+        }).then(() => {
+            return caches.open(staticCacheName)
+                .then(cache => {
+                    return cache.addAll(filesToCache);
+                });
+        })
     )
 });
 
