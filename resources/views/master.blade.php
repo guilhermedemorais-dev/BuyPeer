@@ -21,11 +21,7 @@
     </script>
 
     <!-- CUSTOM STYLE -->
-    @if (function_exists('mix') && file_exists(public_path('mix-manifest.json')))
-      <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    @else
-      <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    @endif
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('themes/default/css/custom.css') }}">
     
     <!-- CUSTOM THEME COLORS -->
@@ -89,11 +85,7 @@
         const APP_KEY = "{{ env('MIX_API_KEY') }}";
     </script>
 
-    @if (function_exists('mix') && file_exists(public_path('mix-manifest.json')))
-      <script src="{{ mix('js/app.js') }}"></script>
-    @else
-      <script src="{{ asset('js/app.js') }}"></script>
-    @endif
+    <script src="{{ mix('js/app.js') }}"></script>
     <script src="{{ asset('themes/default/js/modal.js') }}"></script>
     <script src="{{ asset('themes/default/js/customScript.js') }}"></script>
     <script src="{{ asset('pwa/index.js') }}"></script>
