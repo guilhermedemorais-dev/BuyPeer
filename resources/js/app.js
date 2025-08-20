@@ -77,12 +77,13 @@ if (localStorage.getItem('vuex')) {
         store.dispatch('bootstrap').catch(()=>{});
     }
 }
-// Montagem resiliente: usa #admin-app se existir; senão #app
-const mountTarget = document.querySelector('#admin-app') ? '#admin-app' : '#app';
+// Montagem resiliente: tenta #admin-app, #site-app, ou #app
+const target = document.querySelector('#admin-app')
+  ? '#admin-app'
+  : (document.querySelector('#site-app') ? '#site-app' : '#app');
 try {
-  // eslint-disable-next-line no-console
-  console.log('[BuyPeer] boot app on', mountTarget);
-  app.mount(mountTarget);
+  console.log('[BuyPeer] mount on', target);
+  app.mount(target);
 } catch (e) {
-  console.error('[BuyPeer] boot failed', e);
+  console.error('[BuyPeer] mount failed', e);
 }

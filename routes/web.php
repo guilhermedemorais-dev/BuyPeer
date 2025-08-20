@@ -32,6 +32,11 @@ Route::prefix('install')->name('installer.')->middleware(['web'])->group(functio
 });
 
 Route::get('/', [RootController::class, 'index'])->middleware(['installed'])->name('home');
+
+Route::get('/health', function () {
+    return response('OK:blade', 200)
+        ->header('Content-Type', 'text/plain');
+})->name('health');
 Route::prefix('payment')->name('payment.')->middleware(['installed'])->group(function () {
     Route::get('/{paymentGateway:slug}/pay/{order}', [PaymentController::class, 'index'])->name('index');
     Route::post('/{order}/pay', [PaymentController::class, 'payment'])->name('store');
