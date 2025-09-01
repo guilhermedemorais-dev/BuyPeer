@@ -216,7 +216,18 @@ Route::prefix('admin')->name('admin.')->middleware(['auth:sanctum'])->group(func
             Route::post('/', [AppearanceController::class, 'update']);
             Route::post('/restore', [AppearanceController::class, 'restore']);
         });
-        
+    });
+
+    // Compat: manter chamadas antigas do front enquanto migramos
+    Route::prefix('settings')->group(function () {
+        Route::prefix('theme-style')->name('theme-style.')->group(function () {
+            Route::get('/', [AppearanceController::class, 'index']);
+            Route::post('/', [AppearanceController::class, 'update']);
+            Route::post('/restore', [AppearanceController::class, 'restore']);
+        });
+    });
+
+    Route::prefix('setting')->name('setting.')->group(function () {
         Route::prefix('pwa')->name('pwa')->group(function () {
             Route::get('/', [PWAController::class, 'index']);
             Route::post('/', [PWAController::class, 'update']);
