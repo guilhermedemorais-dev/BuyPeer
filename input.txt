@@ -1,1 +1,1 @@
-d7ZzsveuawF2oT0SdSGZ
+Preciso abrir o servidor Laravel e rodar o nosso site BuyPeer

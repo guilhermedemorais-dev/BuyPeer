@@ -74,7 +74,13 @@ app.use(head)
 if (localStorage.getItem('vuex')) {
     const vuex = JSON.parse(localStorage.getItem('vuex'));
     if (vuex?.auth?.authToken && (!vuex?.auth?.authMenu || vuex?.auth?.authMenu.length === 0)) {
-        store.dispatch('bootstrap').catch(()=>{});
+        store.dispatch('bootstrap').then(() => {
+            // Aplicar permissões às rotas após bootstrap
+            import('./services/appService').then(module => {
+                const appService = module.default;
+                appService.recursiveRouter(router.options.routes, store.getters.authPermission);
+            });
+        }).catch(()=>{});
     }
 }
 app.mount('#app');

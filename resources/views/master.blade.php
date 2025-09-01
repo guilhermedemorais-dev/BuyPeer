@@ -63,8 +63,7 @@
         @endforeach
     @endif
 
-    <!-- HEALTHCHECK_BUYPEER: se você vê este bloco, Blade está ok. Se a UI segue vazia, o problema é JS/mount/assets. -->
-    <div id="__admin_healthcheck" style="padding:6px;border:1px dashed #aaa;margin:8px 0;background:#f0f0f0;color:#333;font-family:monospace;font-size:12px;">Blade OK - Vue.js deve montar em #app</div>
+
     <div id="app"></div>
 
     @if (!blank($analytics))
@@ -85,6 +84,8 @@
         const APP_KEY = "{{ env('MIX_API_KEY') }}";
     </script>
 
+    <script src="{{ mix('js/manifest.js') }}"></script>
+    <script src="{{ mix('js/vendor.js') }}"></script>
     <script src="{{ mix('js/app.js') }}"></script>
     <script src="{{ asset('themes/default/js/modal.js') }}"></script>
     <script src="{{ asset('themes/default/js/customScript.js') }}"></script>

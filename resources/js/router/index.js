@@ -96,8 +96,13 @@ routes.push({
     meta: { isFrontend: true },
 });
 
-const permission = store.getters.authPermission;
-appService.recursiveRouter(routes, permission);
+// As permissões serão aplicadas após o login via LoginComponent.vue
+// Para evitar problemas de 403, vamos inicializar com access: true para rotas sem authStatus
+routes.forEach(route => {
+    if (route.meta && route.meta.permissionUrl) {
+        route.meta.access = true; // Default access
+    }
+});
 
 const API_URL = ENV.API_URL;
 const router = createRouter({

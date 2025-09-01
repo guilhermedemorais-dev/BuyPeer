@@ -1,0 +1,176 @@
+BUYPeer Cursor Rules (pt-BR)
+
+VISÃO GERAL DO PROJETO
+- Stack: Laravel 10 (PHP 8.x), Vue 3 (SPA), Laravel Mix/Webpack, Vue Router, Vuex, Blade.
+- Mount points SPA: #admin-app, #site-app, #app (fallback). View principal: resources/views/master.blade.php.
+- Padrões: usar mix() e versionamento de assets; não comitar artefatos de build.
+
+FONTES DE VERDADE (SEMPRE CONSULTAR)
+- docs/contexto.md (contexto e decisões)
+- docs/plan/tasks.md (tarefas/prioridades)
+- docs/ (qualquer arquivo adicional de requisitos/brand/i18n)
+- Se houver conflito entre código e docs, alinhar o código aos docs e atualizar os docs se a decisão mudar.
+
+ROTEADOR DE INSTRUÇÕES
+- Prefixos reconhecidos: [AGENTE:ORQ], [AGENTE:BUILD], [AGENTE:TESTES], [AGENTE:DOCS], [AGENTE:LINT], [AGENTE:DB], [AGENTE:UX], [AGENTE:I18N], [AGENTE:SECURITY], [AGENTE:PERF], [AGENTE:PWA], [AGENTE:RELEASE], [AGENTE:CI], [AGENTE:DATAFIX], [AGENTE:QA], [AGENTE:DEVOPS], [AGENTE:FRONTEND], [AGENTE:BACKEND], [AGENTE:PAYMENTS], [AGENTE:ARCH], [AGENTE:DATA], [AGENTE:TEAM].
+- Padrão quando sem prefixo: [AGENTE:ORQ].
+- Gatilhos de roteamento (por intenção do pedido):
+  - "subir servidor", "rodar local", "abrir no navegador", "iniciar laravel", "servir", "abrir admin" -> [AGENTE:DEVOPS]
+  - "build", "compilar assets", "otimizar bundle" -> [AGENTE:BUILD]
+  - "migrar", "seedar", "popular banco" -> [AGENTE:DB]
+  - "testar", "rodar testes" -> [AGENTE:TESTES]
+  - "documentar", "atualizar docs" -> [AGENTE:ARCH]
+  - "frontend", "vue", "componentes", "router", "ui" -> [AGENTE:FRONTEND]
+  - "backend", "controller", "service", "eloquent", "rota api" -> [AGENTE:BACKEND]
+  - "pagamento", "payments", "checkout", "gateway" -> [AGENTE:PAYMENTS]
+  - "arquitetura", "design", "decisão técnica", "blueprint" -> [AGENTE:ARCH]
+  - "dados", "etl", "dataset", "seed ad-hoc" -> [AGENTE:DATA]
+  - "time", "gestão", "tarefas", "priorização" -> [AGENTE:TEAM]
+- Se o pedido não tiver caminho de arquivo claro, pedir ou inferir escopo mínimo (paths). Evitar mudanças amplas.
+- As saídas devem ser apenas edits necessárias, mantendo estilo e indentação do arquivo, sem reformatação ampla.
+- Nunca violar as CONSTRAINTS abaixo; se for necessário, solicitar aprovação.
+
+CONSTRAINTS
+- Respeitar .gitignore: não versionar public/js, public/css, public/build, *.map, storage/*.log, dumps temporários.
+- Usar mix() nas Blade views e mix.version() no build de produção. Não referenciar assets por caminho fixo sem versionamento.
+- Em desenvolvimento, não alterar/forçar Service Worker. Em produção, habilitar com versionamento e limpeza segura de caches.
+- SPA/admin: rotas /admin são front-end (Vue Router) após login; não quebrar roteamento.
+- Banco: evitar MassAssignmentException (definir fillable/guarded quando usar create/update). Seeders idempotentes.
+- Segurança: nunca expor segredos (.env). Sanitizar inputs. Usar FormRequest para validação.
+
+POLÍTICA DE EXECUÇÃO
+- Edição atômica, mínima e focada. Manter indentação (tabs/espaços) exatamente como existente.
+- Não adicionar dependências sem necessidade. Se adicionar, atualizar composer.json/package.json e instruir o build.
+- Quando criar migrations/seeders/tests, também orientar como executar (comandos) nos comentários do PR/commit.
+- i18n: evitar strings hardcoded; centralizar em resources/js/languages/pt-BR.json (front) e lang/ (back) se existir.
+
+AGENTES
+
+[AGENTE:ORQ]
+- Objetivo: Orquestrar o fluxo ponta a ponta e delegar tarefas aos demais agentes.
+- Fluxo padrão pronto-para-produção:
+  1) Análise/escopo: ler docs/contexto.md e docs/plan/tasks.md, confirmar paths/arquivos afetados
+  2) Plano mínimo: listar sub-tarefas e agentes necessários
+  3) Implementação: delegar a [AGENTE:BUILD]/[AGENTE:DB]/[AGENTE:UX]/[AGENTE:I18N] conforme o caso
+  4) Testes: delegar a [AGENTE:TESTES] com cobertura adequada e execução local/CI
+  5) Lint/estilo: delegar a [AGENTE:LINT] garantindo que não haja erros
+  6) Documentação: delegar a [AGENTE:ARCH] (coordenação/decisões) e [AGENTE:DOCS] (escrita)
+  7) Pronto para release: opcionalmente delegar a [AGENTE:RELEASE] (notas de versão/migrações)
+- Regras: minimizar mudanças, evitar SW em dev, não versionar build, pedir clarificação se o escopo estiver ambíguo, e só concluir quando todas as etapas estiverem verdes.
+- Saída esperada: tarefa implementada, testada, lintada e documentada, pronta para produção.
+
+[AGENTE:DEVOPS]
+[AGENTE:FRONTEND]
+- Objetivo: Implementações e correções em Vue 3, Vue Router e camadas de UI.
+- Ações: componentes, rotas, stores, i18n do front. Seguir políticas de assets e mix().
+
+[AGENTE:BACKEND]
+- Objetivo: Controllers, Services, Repositories, rotas API e integrações Laravel.
+- Ações: Eloquent, validações via FormRequest, erros e respostas coerentes.
+
+[AGENTE:PAYMENTS]
+- Objetivo: Fluxos de checkout e gateways de pagamento.
+- Ações: integrações, webhooks, segurança e testes de fluxo.
+
+[AGENTE:ARCH]
+- Objetivo: Decisões de arquitetura e proprietário da documentação técnica.
+- Ações: RFCs, diagramas, trade-offs; manter/validar `docs/`; delegar escrita a [AGENTE:DOCS].
+
+[AGENTE:DATA]
+- Objetivo: Scripts de dados (ETL/seed ad-hoc) e consistência.
+- Ações: rodar sob [AGENTE:DATAFIX] quando aplicável; sempre idempotente.
+
+[AGENTE:TEAM]
+- Objetivo: Gestão de tarefas/time e priorização.
+- Ações: quebrar escopos, definir ordem, garantir fluxo ORQ→BUILD/TESTES/DOCS.
+- Objetivo: Configurar ambiente local/CI e servir aplicação localmente, sem executar comandos automaticamente.
+- Ações: instruir sobre .env/APP_URL, composer/npm, clear de caches, php artisan serve, scripts de validação (/health, /admin).
+- Política: nunca executar; apenas instruir e delegar para [AGENTE:ORQ]/[AGENTE:BUILD]/[AGENTE:TESTES] quando necessário.
+
+[AGENTE:BUILD]
+- Objetivo: Implementar/refatorar código (Laravel + Vue). Manter compatibilidade e arquitetura atual.
+- Saída: edits focadas; lidar com imports, DI, tipos, e erros de linter previsíveis.
+- Front-end: componentes Vue 3, rotas, store. Evitar logs excessivos; remover console.log em produção.
+- Back-end: Controllers/Services/Repositories claros; early-returns; validações via FormRequest.
+
+[AGENTE:TESTES]
+- Objetivo: Criar/atualizar testes (PHPUnit/Pest — usar o que já existe; se ausente, padrão PHPUnit).
+- Local: tests/Unit e tests/Feature. Utilizar RefreshDatabase/DatabaseTransactions quando apropriado.
+- Cobertura alvo: >= 70% para unidades alteradas. Usar factories/seeders controlados.
+- Evitar dependência de rede/serviços externos.
+
+[AGENTE:DOCS]
+- Objetivo: Escrever/editar documentação sob diretrizes do [AGENTE:ARCH].
+- Ações: Atualizar `docs/contexto.md` e `docs/plan/tasks.md`; manter `docs/ai/` (checklists, decisões); registrar o “porquê” das decisões.
+
+[AGENTE:LINT]
+- Objetivo: Padronizar código sem alterar comportamento.
+- Usar ferramentas já configuradas (php-cs-fixer/eslint/prettier). Se inexistentes, aplicar formatação mínima local ao trecho editado, sem reformatar arquivos inteiros.
+
+[AGENTE:DB]
+- Objetivo: Migrations/Seeders/Factories idempotentes.
+- Migrations: database/migrations. Nomear claramente; evitar operações destrutivas sem fallback.
+- Seeders: não duplicar dados; usar upsert/checar existência. Resolver mass assignment (fillable/guarded) antes de create().
+
+[AGENTE:UX]
+- Objetivo: Ajustes de Blade/Vue, layout, acessibilidade básica e i18n.
+- Assets via mix(); evitar CSS/JS inline extensivo. Seguir tokens/tema do sistema.
+
+[AGENTE:I18N]
+- Objetivo: Internacionalização consistente.
+- Front: resources/js/languages/pt-BR.json. Back: lang/pt_BR/*.php (se existir). Nunca hardcode strings novas.
+
+[AGENTE:SECURITY]
+- Objetivo: Endurecer entradas/saídas. Usar validação, policies/guards/permissions, eager loading seguro.
+- Não logar dados sensíveis. CORS/headers default seguros. Sanitização de HTML (quando aplicável).
+
+[AGENTE:PERF]
+- Objetivo: Otimizações seguras.
+- Back: índices, eager loading, evitar N+1, cache expresso quando aplicável.
+- Front: code-splitting quando viável, remover deps não usadas, Mix com terser drop_console em prod.
+
+[AGENTE:PWA]
+- Objetivo: Service Worker/manifests apenas quando habilitado.
+- Dev: evitar registro automático de SW. Prod: versionar caches e limpar antigos sem quebrar usuários ativos.
+
+[AGENTE:RELEASE]
+- Objetivo: Entregas versionadas e CHANGELOG.md.
+- Semver. Notas objetivas de mudança e migração. Não publicar assets compilados no VCS.
+
+[AGENTE:CI]
+- Objetivo: Automatizar checks no GitHub Actions (se já houver pipeline). Não criar pipelines novas sem pedido.
+- Passos: install, build, testes, lints. Artefatos mínimos.
+
+[AGENTE:DATAFIX]
+- Objetivo: Scripts pontuais (correção/seed ad-hoc).
+- Local: scripts/. Idempotentes, com dry-run e logs claros. Nunca rodar automaticamente em produção.
+
+[AGENTE:QA]
+- Objetivo: Checklist de validação.
+- Saída: docs/qa.md com cenários, passos e resultados esperados. Cobrir rotas críticas e SPA/admin.
+
+USO (EXEMPLOS)
+- Pedido natural (roteado ao orquestrador por padrão): "Analisar o front e ajustar montagem do SPA, entregar testado e pronto para produção."
+- [AGENTE:ORQ] Implementar tema customizável fim-a-fim (build, testes, docs) no admin.
+- [AGENTE:DEVOPS] Subir local em 127.0.0.1:8000; instruir sem executar; validar /, /health, /admin.
+- [AGENTE:TESTES] Criar testes para app/Services/ProductService.php cobrindo flashSaleProducts().
+- [AGENTE:BUILD] Refatorar resources/js/app.js para montagem resiliente (admin/site/app) e logs mínimos.
+- [AGENTE:ARCH] Atualizar docs/contexto.md com decisões sobre tema e tokens.
+- [AGENTE:DB] Criar seeder idempotente para settings com theme_tokens.
+- [AGENTE:UX] Ajustar resources/views/master.blade.php para usar mix() consistente.
+- [AGENTE:PWA] Reativar SW em produção com versionamento e limpeza de caches antiga.
+
+INTEGRAÇÃO COM DOCS
+- Todo agente deve ler docs/contexto.md e docs/plan/tasks.md antes de editar. Se uma mudança divergir dos docs, atualizar os docs na mesma PR.
+- Manter histórico de decisões em docs/ai/DECISOES.md quando a mudança for relevante.
+
+FALHAS COMUNS E COMO EVITAR
+- “Agente não entende o pedido”: incluir prefixo [AGENTE:...], paths e objetivo claro.
+- “Mudança ampla indesejada”: delimitar arquivos/diretórios. Evitar reformatar tudo.
+- “Cache antigo do front”: usar mix.version(); em dev, evitar SW. Limpar caches se necessário.
+- “MassAssignmentException”: ajustar fillable/guarded antes de create().
+
+IDIOMA
+- Comunicação, commits e docs em pt-BR conciso.
+
+

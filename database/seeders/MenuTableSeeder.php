@@ -367,11 +367,11 @@ class MenuTableSeeder extends Seeder
                                 'updated_at' => now()
                             ],
                             [
-                                'name'       => 'Tema & Estilo',
+                                'name'       => 'Cores & Estilo',
                                 'language'   => 'theme_style',
                                 'url'        => 'settings/theme-style',
                                 'icon'       => 'lab lab-line-palette',
-                                'priority'   => 90,
+                                'priority'   => 95,
                                 'status'     => 1,
                                 'created_at' => now(),
                                 'updated_at' => now()

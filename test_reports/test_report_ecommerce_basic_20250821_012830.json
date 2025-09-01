@@ -1,0 +1,53 @@
+{
+  "test_suite": "ecommerce_basic",
+  "timestamp": "2025-08-21T01:28:30.253132",
+  "summary": {
+    "total_tests": 5,
+    "passed": 3,
+    "failed": 2,
+    "errors": 0,
+    "success_rate": 60.0
+  },
+  "results": [
+    {
+      "test_id": "test_001",
+      "status": "passed",
+      "duration": 2.5034098625183105,
+      "screenshot_path": null,
+      "error_message": null,
+      "timestamp": "2025-08-21 01:28:16.736810"
+    },
+    {
+      "test_id": "test_002",
+      "status": "passed",
+      "duration": 2.002009153366089,
+      "screenshot_path": null,
+      "error_message": null,
+      "timestamp": "2025-08-21 01:28:19.739591"
+    },
+    {
+      "test_id": "test_003",
+      "status": "failed",
+      "duration": 2.0020017623901367,
+      "screenshot_path": "/home/guilherme/Downloads/BuyPeer-main/test_screenshots/test_test_003_20250821_012822.png",
+      "error_message": null,
+      "timestamp": "2025-08-21 01:28:22.742686"
+    },
+    {
+      "test_id": "test_004",
+      "status": "passed",
+      "duration": 2.0033116340637207,
+      "screenshot_path": null,
+      "error_message": null,
+      "timestamp": "2025-08-21 01:28:25.746889"
+    },
+    {
+      "test_id": "test_005",
+      "status": "failed",
+      "duration": 2.502901077270508,
+      "screenshot_path": "/home/guilherme/Downloads/BuyPeer-main/test_screenshots/test_test_005_20250821_012829.png",
+      "error_message": null,
+      "timestamp": "2025-08-21 01:28:29.251628"
+    }
+  ]
+}

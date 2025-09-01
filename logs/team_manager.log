@@ -1,0 +1,598 @@
+2025-08-21 01:17:56,233 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-21 01:17:56,234 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-21 01:17:56,234 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-21 01:17:56,234 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-21 01:17:56,234 - agents.team_manager - INFO - ✅ 9 agentes inicializados
+2025-08-21 01:17:56,234 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-21 01:17:56,234 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-21 01:17:56,235 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-21 01:17:56,235 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-21 01:17:56,734 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-21 01:17:56,737 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-21 01:17:56,739 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-21 01:17:57,559 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-21 01:17:57,559 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-21 01:17:57,559 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-21 01:17:57,559 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-21 01:17:57,560 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-21 01:17:57,560 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-21 01:17:57,560 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-21 01:17:57,560 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-21 01:17:57,560 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-21 01:22:53,020 - agents.team_manager - INFO - 📋 Processando solicitação: abre o sistem no navegador, quero verificar uma coisa
+2025-08-21 01:22:53,025 - agents.context_agent - INFO - 🔍 Obtendo contexto para: abre o sistem no navegador, quero verificar uma coisa
+2025-08-21 01:22:53,026 - agents.architect - INFO - 📋 Analisando solicitação: abre o sistem no navegador, quero verificar uma coisa
+2025-08-21 01:23:25,629 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-21 01:23:25,630 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-21 01:23:25,630 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-21 01:23:25,630 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-21 01:23:25,630 - agents.team_manager - INFO - ✅ 9 agentes inicializados
+2025-08-21 01:23:25,630 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-21 01:23:25,631 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-21 01:23:25,631 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-21 01:23:25,631 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-21 01:23:26,174 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-21 01:23:26,176 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-21 01:23:26,178 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-21 01:23:27,003 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-21 01:23:27,003 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-21 01:23:27,004 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-21 01:23:27,004 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-21 01:23:27,004 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-21 01:23:27,004 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-21 01:23:27,004 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-21 01:23:27,004 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-21 01:23:27,004 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-21 01:25:12,494 - agents.team_manager - INFO - 📋 Processando solicitação: preciso indentificar uma erro que não está deixando o front and do e-commercer funcionar
+2025-08-21 01:25:12,494 - agents.context_agent - INFO - 🔍 Obtendo contexto para: preciso indentificar uma erro que não está deixando o front and do e-commercer funcionar
+2025-08-21 01:25:12,495 - agents.architect - INFO - 📋 Analisando solicitação: preciso indentificar uma erro que não está deixando o front and do e-commercer funcionar
+2025-08-21 01:35:37,734 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-21 01:35:37,735 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-21 01:35:37,735 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-21 01:35:37,736 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-21 01:35:37,736 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-21 01:35:37,736 - agents.team_manager - INFO - ✅ 10 agentes inicializados
+2025-08-21 01:35:37,736 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-21 01:35:37,737 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-21 01:35:37,737 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-21 01:35:37,737 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-21 01:35:38,221 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-21 01:35:38,223 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-21 01:35:38,223 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-21 01:35:39,035 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-21 01:35:39,035 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-21 01:35:39,036 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-21 01:35:39,036 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-21 01:35:39,036 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-21 01:35:39,036 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-21 01:35:39,090 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-21 01:35:39,091 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-21 01:35:39,091 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-21 01:35:39,091 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-21 01:35:39,091 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-22 13:32:13,606 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-22 13:32:13,607 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-22 13:32:13,607 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-22 13:32:13,607 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-22 13:32:13,608 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-22 13:32:13,608 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-22 13:32:13,608 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-22 13:32:13,609 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-22 13:32:13,609 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-22 13:32:13,611 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-22 13:32:13,612 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-22 13:32:14,297 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:32:14,301 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-22 13:32:14,302 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-22 13:32:15,647 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-22 13:32:15,647 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-22 13:32:15,648 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-22 13:32:15,648 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-22 13:32:15,648 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-22 13:32:15,649 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-22 13:32:15,916 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-22 13:32:15,916 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-22 13:32:16,710 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-22 13:32:16,710 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-22 13:32:16,710 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-22 13:32:16,710 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-22 13:32:16,710 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-22 13:33:10,017 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-22 13:33:10,017 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-22 13:33:10,019 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-22 13:33:10,019 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-22 13:33:10,020 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-22 13:33:10,020 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-22 13:33:10,021 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-22 13:33:10,021 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-22 13:33:10,021 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-22 13:33:10,022 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-22 13:33:10,022 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-22 13:33:10,505 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:33:10,506 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-22 13:33:10,507 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-22 13:33:11,339 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-22 13:33:11,339 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-22 13:33:11,342 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-22 13:33:11,343 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-22 13:33:11,343 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-22 13:33:11,343 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-22 13:33:11,455 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-22 13:33:11,455 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-22 13:33:12,415 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-22 13:33:12,416 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-22 13:33:12,416 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-22 13:33:12,416 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-22 13:33:12,416 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-22 13:33:39,417 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-22 13:33:39,417 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-22 13:33:39,418 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-22 13:33:39,418 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-22 13:33:39,418 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-22 13:33:39,418 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-22 13:33:39,418 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-22 13:33:39,419 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-22 13:33:39,419 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-22 13:33:39,419 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-22 13:33:39,419 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-22 13:33:39,860 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:33:39,862 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-22 13:33:39,864 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-22 13:33:40,637 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-22 13:33:40,638 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-22 13:33:40,638 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-22 13:33:40,638 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-22 13:33:40,638 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-22 13:33:40,638 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-22 13:33:40,701 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-22 13:33:40,701 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-22 13:33:41,579 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-22 13:33:41,579 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-22 13:33:41,580 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-22 13:33:41,580 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-22 13:33:41,581 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-22 13:33:41,581 - agents.team_manager - INFO - 📋 Processando solicitação: Preciso abrir o servidor Laravel e rodar o nosso site BuyPeer
+2025-08-22 13:33:41,582 - agents.context_agent - INFO - 🔍 Obtendo contexto para: Preciso abrir o servidor Laravel e rodar o nosso site BuyPeer
+2025-08-22 13:33:42,081 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:33:42,645 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:33:43,069 - agents.architect - INFO - 📋 Analisando solicitação: Preciso abrir o servidor Laravel e rodar o nosso site BuyPeer
+2025-08-22 13:37:15,193 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-22 13:37:15,197 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-22 13:37:15,197 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-22 13:37:15,197 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-22 13:37:15,197 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-22 13:37:15,198 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-22 13:37:15,201 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-22 13:37:15,201 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-22 13:37:15,201 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-22 13:37:15,201 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-22 13:37:15,202 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-22 13:37:15,994 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:37:15,996 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-22 13:37:15,997 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-22 13:37:16,848 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-22 13:37:16,848 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-22 13:37:16,848 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-22 13:37:16,848 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-22 13:37:16,848 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-22 13:37:16,849 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-22 13:37:16,930 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-22 13:37:16,930 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-22 13:37:17,566 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-22 13:37:17,568 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-22 13:37:17,568 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-22 13:37:17,569 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-22 13:37:17,569 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-22 13:44:33,346 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-22 13:44:33,347 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-22 13:44:33,347 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-22 13:44:33,347 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-22 13:44:33,347 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-22 13:44:33,348 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-22 13:44:33,348 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-22 13:44:33,348 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-22 13:44:33,348 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-22 13:44:33,348 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-22 13:44:33,348 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-22 13:44:34,499 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:44:34,505 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-22 13:44:34,508 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-22 13:44:38,674 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-22 13:44:38,675 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-22 13:44:38,676 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-22 13:44:38,677 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-22 13:44:38,677 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-22 13:44:38,678 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-22 13:44:38,981 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-22 13:44:38,981 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-22 13:44:41,624 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-22 13:44:41,626 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-22 13:44:41,628 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-22 13:44:41,630 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-22 13:44:41,644 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-22 13:44:41,649 - agents.team_manager - INFO - 📋 Processando solicitação: Preciso abrir o servidor Laravel e rodar o nosso site BuyPeer
+2025-08-22 13:44:41,650 - agents.context_agent - INFO - 🔍 Obtendo contexto para: Preciso abrir o servidor Laravel e rodar o nosso site BuyPeer
+2025-08-22 13:44:42,267 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:44:42,923 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:44:44,691 - agents.architect - INFO - 📋 Analisando solicitação: Preciso abrir o servidor Laravel e rodar o nosso site BuyPeer
+2025-08-22 13:50:22,402 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-22 13:50:22,402 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-22 13:50:22,402 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-22 13:50:22,402 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-22 13:50:22,403 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-22 13:50:22,403 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-22 13:50:22,403 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-22 13:50:22,403 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-22 13:50:22,403 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-22 13:50:22,403 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-22 13:50:22,404 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-22 13:50:23,170 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:50:23,172 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-22 13:50:23,174 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-22 13:50:23,971 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-22 13:50:23,971 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-22 13:50:23,972 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-22 13:50:23,972 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-22 13:50:23,972 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-22 13:50:23,973 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-22 13:50:24,058 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-22 13:50:24,058 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-22 13:50:24,778 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-22 13:50:24,778 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-22 13:50:24,778 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-22 13:50:24,779 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-22 13:50:24,779 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-22 13:50:24,780 - agents.team_manager - INFO - 📋 Processando solicitação: O site não está carregando corretamente, está com tela branca e Vue.js não está montando. Preciso que a equipe identifique e corrija os problemas de carregamento dos arquivos JavaScript e CSS
+2025-08-22 13:50:24,780 - agents.context_agent - INFO - 🔍 Obtendo contexto para: O site não está carregando corretamente, está com tela branca e Vue.js não está montando. Preciso que a equipe identifique e corrija os problemas de carregamento dos arquivos JavaScript e CSS
+2025-08-22 13:50:25,275 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-22 13:50:25,278 - agents.architect - INFO - 📋 Analisando solicitação: O site não está carregando corretamente, está com tela branca e Vue.js não está montando. Preciso que a equipe identifique e corrija os problemas de carregamento dos arquivos JavaScript e CSS
+2025-08-27 21:17:35,953 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-27 21:17:35,954 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-27 21:17:35,954 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-27 21:17:35,954 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-27 21:17:35,954 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-27 21:17:35,955 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-27 21:17:35,955 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-27 21:17:35,955 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-27 21:17:35,955 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-27 21:17:35,955 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-27 21:17:35,955 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-27 21:17:36,466 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-27 21:17:36,469 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-27 21:17:36,471 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-27 21:17:37,480 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-27 21:17:37,480 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-27 21:17:37,481 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-27 21:17:37,481 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-27 21:17:37,481 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-27 21:17:37,481 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-27 21:17:37,993 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-27 21:17:37,993 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-27 21:17:39,997 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-27 21:17:39,997 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-27 21:17:39,997 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-27 21:17:39,998 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-27 21:17:39,998 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-27 21:20:43,217 - agents.team_manager - INFO - 📋 Processando solicitação: analise e compare o sistem no gihub e o sistema aqui na maquina local procure os erros e refatore o codigo corrigindo cada uma, obs não desfaça e nem modifique as melhorias e atualizações que já fizemos, quero que corrija os erro e teste e refatore e me entrege o sistem pornto para produção
+2025-08-27 21:20:43,218 - agents.context_agent - INFO - 🔍 Obtendo contexto para: analise e compare o sistem no gihub e o sistema aqui na maquina local procure os erros e refatore o codigo corrigindo cada uma, obs não desfaça e nem modifique as melhorias e atualizações que já fizemos, quero que corrija os erro e teste e refatore e me entrege o sistem pornto para produção
+2025-08-27 21:20:43,749 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-27 21:20:44,235 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-27 21:20:44,442 - agents.architect - INFO - 📋 Analisando solicitação: analise e compare o sistem no gihub e o sistema aqui na maquina local procure os erros e refatore o codigo corrigindo cada uma, obs não desfaça e nem modifique as melhorias e atualizações que já fizemos, quero que corrija os erro e teste e refatore e me entrege o sistem pornto para produção
+2025-08-27 21:34:42,402 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-27 21:34:42,402 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-27 21:34:42,403 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-27 21:34:42,403 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-27 21:34:42,403 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-27 21:34:42,403 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-27 21:34:42,403 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-27 21:34:42,404 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-27 21:34:42,404 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-27 21:34:42,404 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-27 21:34:42,404 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-27 21:34:42,907 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-27 21:34:42,911 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-27 21:34:42,914 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-27 21:34:44,783 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-27 21:34:44,784 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-27 21:34:44,784 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-27 21:34:44,784 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-27 21:34:44,785 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-27 21:34:44,785 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-27 21:34:45,034 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-27 21:34:45,034 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-27 21:34:46,688 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-27 21:34:46,689 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-27 21:34:46,689 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-27 21:34:46,689 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-27 21:34:46,689 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-27 21:34:46,690 - agents.team_manager - INFO - 📋 Processando solicitação: teste dos agentes
+2025-08-27 21:34:46,690 - agents.context_agent - INFO - 🔍 Obtendo contexto para: teste dos agentes
+2025-08-27 21:34:46,690 - agents.architect - INFO - 📋 Analisando solicitação: teste dos agentes
+2025-08-27 21:38:26,569 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-27 21:38:26,569 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-27 21:38:26,570 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-27 21:38:26,570 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-27 21:38:26,570 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-27 21:38:26,570 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-27 21:38:26,570 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-27 21:38:26,570 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-27 21:38:26,570 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-27 21:38:26,571 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-27 21:38:26,571 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-27 21:38:27,078 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-27 21:38:27,081 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-27 21:38:27,082 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-27 21:38:27,991 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-27 21:38:27,992 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-27 21:38:27,992 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-27 21:38:27,992 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-27 21:38:27,992 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-27 21:38:27,992 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-27 21:38:28,160 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-27 21:38:28,161 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-27 21:38:29,027 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-27 21:38:29,027 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-27 21:38:29,028 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-27 21:38:29,028 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-27 21:38:29,028 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-27 21:38:29,028 - agents.team_manager - INFO - 📋 Processando solicitação: 
+    REFATORE COMPLETAMENTE O SISTEMA BUYPEER:
+    
+    1. ANALISE todos os arquivos e identifique problemas
+    2. CORRIJA todos os bugs encontrados
+    3. OTIMIZE performance e código
+    4. TESTE todas as funcionalidades
+    5. GARANTA que login admin funciona perfeitamente
+    6. MANTENHA as traduções pt-BR e melhorias existentes
+    7. PREPARE para produção
+    
+    Execute TODAS as correções necessárias automaticamente.
+    
+2025-08-27 21:38:29,028 - agents.context_agent - INFO - 🔍 Obtendo contexto para: 
+    REFATORE COMPLETAMENTE O SISTEMA BUYPEER:
+    
+    1. ANALISE todos os arquivos e identifique problemas
+    2. CORRIJA todos os bugs encontrados
+    3. OTIMIZE performance e código
+    4. TESTE todas as funcionalidades
+    5. GARANTA que login admin funciona perfeitamente
+    6. MANTENHA as traduções pt-BR e melhorias existentes
+    7. PREPARE para produção
+    
+    Execute TODAS as correções necessárias automaticamente.
+    
+2025-08-27 21:38:29,489 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-27 21:38:29,934 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-27 21:38:30,017 - agents.architect - INFO - 📋 Analisando solicitação: 
+    REFATORE COMPLETAMENTE O SISTEMA BUYPEER:
+    
+    1. ANALISE todos os arquivos e identifique problemas
+    2. CORRIJA todos os bugs encontrados
+    3. OTIMIZE performance e código
+    4. TESTE todas as funcionalidades
+    5. GARANTA que login admin funciona perfeitamente
+    6. MANTENHA as traduções pt-BR e melhorias existentes
+    7. PREPARE para produção
+    
+    Execute TODAS as correções necessárias automaticamente.
+    
+2025-08-27 21:38:46,013 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-27 21:38:46,014 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-27 21:38:46,015 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-27 21:38:46,015 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-27 21:38:46,016 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-27 21:38:46,016 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-27 21:38:46,016 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-27 21:38:46,017 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-27 21:38:46,017 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-27 21:38:46,017 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-27 21:38:46,017 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-27 21:38:46,617 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-27 21:38:46,619 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-27 21:38:46,620 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-27 21:38:47,584 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-27 21:38:47,585 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-27 21:38:47,585 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-27 21:38:47,585 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-27 21:38:47,585 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-27 21:38:47,585 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-27 21:38:47,792 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-27 21:38:47,793 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-27 21:38:49,258 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-27 21:38:49,258 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-27 21:38:49,259 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-27 21:38:49,259 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-27 21:38:49,259 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-28 21:15:18,112 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-28 21:15:18,113 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-28 21:15:18,113 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-28 21:15:18,113 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-28 21:15:18,114 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-28 21:15:18,114 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-28 21:15:18,114 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-28 21:15:18,114 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-28 21:15:18,114 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-28 21:15:18,114 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-28 21:15:18,115 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-28 21:15:19,280 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-28 21:15:19,281 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-28 21:15:19,282 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-28 21:15:20,753 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-28 21:15:20,753 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-28 21:15:20,754 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-28 21:15:20,754 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-28 21:15:20,754 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-28 21:15:20,754 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-28 21:15:21,238 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-28 21:15:21,238 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-28 21:15:22,525 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-28 21:15:22,525 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-28 21:15:22,526 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-28 21:15:22,526 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-28 21:15:22,526 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-28 21:16:12,830 - agents.team_manager - INFO - 📋 Processando solicitação: cd /home/guilherme/Documentos/BuyPeer-main && source venv/bin/activate
+2025-08-28 21:16:12,831 - agents.context_agent - INFO - 🔍 Obtendo contexto para: cd /home/guilherme/Documentos/BuyPeer-main && source venv/bin/activate
+2025-08-28 21:16:13,302 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-28 21:16:13,306 - agents.architect - INFO - 📋 Analisando solicitação: cd /home/guilherme/Documentos/BuyPeer-main && source venv/bin/activate
+2025-08-28 21:16:22,829 - agents.architect - INFO - Agente Arquiteto inicializado
+2025-08-28 21:16:22,830 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-28 21:16:22,830 - agents.backend - INFO - Agente Backend inicializado - Laravel: True
+2025-08-28 21:16:22,831 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-28 21:16:22,831 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-28 21:16:22,832 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-28 21:16:22,832 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-28 21:16:22,832 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-28 21:16:22,832 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-28 21:16:22,833 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-28 21:16:22,833 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-28 21:16:23,273 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-28 21:16:23,275 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-28 21:16:23,276 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-28 21:16:23,986 - agents.backend - INFO - ✅ Agente Backend ativado com sucesso!
+2025-08-28 21:16:23,986 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-28 21:16:23,986 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-28 21:16:23,987 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-28 21:16:23,987 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-28 21:16:23,987 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-28 21:16:24,117 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-28 21:16:24,117 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-28 21:16:24,849 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-28 21:16:24,850 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-28 21:16:24,850 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-28 21:16:24,850 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-28 21:16:24,850 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-28 21:16:24,850 - agents.team_manager - INFO - 📋 Processando solicitação: Usuário logado como admin mas não consegue acessar painel admin - erro 403. Preciso verificar permissões e corrigir acesso ao dashboard administrativo
+2025-08-28 21:16:24,851 - agents.context_agent - INFO - 🔍 Obtendo contexto para: Usuário logado como admin mas não consegue acessar painel admin - erro 403. Preciso verificar permissões e corrigir acesso ao dashboard administrativo
+2025-08-28 21:16:24,851 - agents.architect - INFO - 📋 Analisando solicitação: Usuário logado como admin mas não consegue acessar painel admin - erro 403. Preciso verificar permissões e corrigir acesso ao dashboard administrativo
+2025-08-29 18:35:05,962 - agents.architect - INFO - 🏗️ Agente Arquiteto inicializado
+2025-08-29 18:35:05,964 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-29 18:35:05,965 - agents.base_agent - INFO - 🤖 backend inicializado
+2025-08-29 18:35:05,968 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-29 18:35:05,970 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-29 18:35:05,972 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-29 18:35:05,974 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-29 18:35:05,976 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-29 18:35:05,979 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-29 18:35:05,982 - agents.mcp_config - INFO - 🔧 Inicializando MCP Manager...
+2025-08-29 18:35:05,990 - agents.mcp_config - INFO - ✅ Carregados 8 MCPs
+2025-08-29 18:35:06,124 - agents.communication - INFO - ✅ Agente architect registrado no Communication Hub
+2025-08-29 18:35:06,125 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-29 18:35:06,126 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-29 18:35:07,140 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-29 18:35:07,182 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-29 18:35:07,194 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-29 18:35:07,204 - agents.communication - INFO - ✅ Agente backend registrado no Communication Hub
+2025-08-29 18:35:07,206 - agents.backend - INFO - 🔧 backend - Capacidades inicializadas: 14
+2025-08-29 18:35:07,206 - agents.base_agent - INFO - ✅ backend ativado com sucesso!
+2025-08-29 18:35:07,206 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-29 18:35:07,206 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-29 18:35:07,206 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-29 18:35:07,207 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-29 18:35:07,207 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-29 18:35:08,855 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-29 18:35:08,856 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-29 18:35:12,341 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-29 18:35:12,341 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-29 18:35:12,341 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-29 18:35:12,342 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-29 18:35:12,342 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-29 18:37:07,228 - agents.team_manager - INFO - 📋 Processando solicitação: echo "Problema de carregamento infinito na seção de logo do painel admin. Usuário não consegue fazer upload das imagens do logo BuyPeer. Verificar configurações de upload, permissões e corrigir o problema para permitir upload das logos nas dimensões corretas (128x43px, 120x120px, 144x48px)" | python3 run_agents.py
+2025-08-29 18:37:07,231 - agents.context_agent - INFO - 🔍 Obtendo contexto para: echo "Problema de carregamento infinito na seção de logo do painel admin. Usuário não consegue fazer upload das imagens do logo BuyPeer. Verificar configurações de upload, permissões e corrigir o problema para permitir upload das logos nas dimensões corretas (128x43px, 120x120px, 144x48px)" | python3 run_agents.py
+2025-08-29 18:37:07,231 - agents.architect - INFO - 📋 Analisando solicitação: echo "Problema de carregamento infinito na seção de logo do painel admin. Usuário não consegue fazer upload das imagens do logo BuyPeer. Verificar configurações de upload, permissões e corrigir o problema para permitir upload das logos nas dimensões corretas (128x43px, 120x120px, 144x48px)" | python3 run_agents.py
+2025-08-29 18:37:07,231 - agents.architect - WARNING - ⚠️ OpenAI não disponível, usando análise padrão
+2025-08-29 18:39:04,333 - agents.base_agent - INFO - 🤖 backend inicializado
+2025-08-29 18:39:29,691 - agents.base_agent - INFO - 🤖 backend inicializado
+2025-08-29 18:39:29,692 - agents.backend - INFO - 🚀 backend executando: Problema de carregamento infinito na seção de logo do painel admin. Usuário não consegue fazer upload das imagens do logo BuyPeer. Verificar configurações de upload, permissões e corrigir o problema para permitir upload das logos nas dimensões corretas (128x43px, 120x120px, 144x48px)
+2025-08-29 18:39:30,698 - agents.base_agent - INFO - 📝 backend registrou tarefa: Problema de carregamento infinito na seção de logo do painel admin. Usuário não consegue fazer upload das imagens do logo BuyPeer. Verificar configurações de upload, permissões e corrigir o problema para permitir upload das logos nas dimensões corretas (128x43px, 120x120px, 144x48px)
+2025-08-29 18:40:10,078 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-29 18:40:28,994 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-29 18:40:28,996 - agents.automation_agent - INFO - 🤖 Executando tarefa: <built-in method title of str object at 0x76e099744710>
+2025-08-29 18:40:28,998 - agents.automation_agent - INFO - 🤖 Executando comando: <built-in method title of str object at 0x76e099744710>
+2025-08-29 18:40:28,999 - agents.automation_agent - ERROR - ❌ Erro ao executar comando: 'builtin_function_or_method' object has no attribute 'lower'
+2025-08-29 18:40:29,001 - agents.automation_agent - ERROR - ❌ Erro ao executar tarefas: 'str' object has no attribute 'id'
+2025-08-29 19:28:03,817 - agents.architect - INFO - 🏗️ Agente Arquiteto inicializado
+2025-08-29 19:28:03,819 - agents.context_agent - INFO - Agente de Contexto inicializado
+2025-08-29 19:28:03,819 - agents.base_agent - INFO - 🤖 backend inicializado
+2025-08-29 19:28:03,820 - agents.frontend - INFO - Agente Frontend inicializado - Vue.js: True
+2025-08-29 19:28:03,820 - agents.test_automation_agent - INFO - Agente de Testes Automatizados inicializado
+2025-08-29 19:28:03,820 - agents.automation_agent - INFO - Agente de Automação Avançado inicializado
+2025-08-29 19:28:03,820 - agents.team_manager - INFO - ✅ 11 agentes inicializados
+2025-08-29 19:28:03,820 - agents.team_manager - INFO - Team Manager inicializado com sucesso!
+2025-08-29 19:28:03,820 - agents.team_manager - INFO - 🔄 Ativando agente: architect
+2025-08-29 19:28:03,821 - agents.mcp_config - INFO - 🔧 Inicializando MCP Manager...
+2025-08-29 19:28:03,821 - agents.mcp_config - INFO - ✅ Carregados 8 MCPs
+2025-08-29 19:28:03,849 - agents.communication - INFO - ✅ Agente architect registrado no Communication Hub
+2025-08-29 19:28:03,850 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-29 19:28:03,850 - agents.team_manager - INFO - 🔄 Ativando agente: context
+2025-08-29 19:28:04,367 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-29 19:28:04,369 - agents.context_agent - INFO - ✅ Agente de Contexto ativado com sucesso!
+2025-08-29 19:28:04,369 - agents.team_manager - INFO - 🔄 Ativando agente: backend
+2025-08-29 19:28:04,369 - agents.communication - INFO - ✅ Agente backend registrado no Communication Hub
+2025-08-29 19:28:04,369 - agents.backend - INFO - 🔧 backend - Capacidades inicializadas: 14
+2025-08-29 19:28:04,369 - agents.base_agent - INFO - ✅ backend ativado com sucesso!
+2025-08-29 19:28:04,370 - agents.team_manager - INFO - 🔄 Ativando agente: frontend
+2025-08-29 19:28:04,370 - agents.frontend - INFO - ✅ Agente Frontend ativado com sucesso!
+2025-08-29 19:28:04,370 - agents.team_manager - INFO - 🔄 Ativando agente: devops
+2025-08-29 19:28:04,370 - agents.team_manager - INFO - 🔄 Ativando agente: qa
+2025-08-29 19:28:04,370 - agents.team_manager - INFO - 🔄 Ativando agente: test_automation
+2025-08-29 19:28:04,871 - agents.test_automation_agent - INFO - ✅ Agente de Testes Automatizados ativado com sucesso!
+2025-08-29 19:28:04,871 - agents.team_manager - INFO - 🔄 Ativando agente: automation
+2025-08-29 19:28:06,465 - agents.automation_agent - INFO - ✅ Agente de Automação Avançado ativado com sucesso!
+2025-08-29 19:28:06,465 - agents.team_manager - INFO - 🔄 Ativando agente: payments
+2025-08-29 19:28:06,466 - agents.team_manager - INFO - 🔄 Ativando agente: data
+2025-08-29 19:28:06,467 - agents.team_manager - INFO - 🔄 Ativando agente: security
+2025-08-29 19:28:06,468 - agents.team_manager - INFO - 🎉 Time completo ativado!
+2025-08-29 19:31:32,567 - agents.team_manager - INFO - 📋 Processando solicitação: python3 run_buypeer_automation.py --task "ftp_deploy" --description "Deploy do BuyPeer no servidor FTP: IP 147.79.89.70, usuário u596780892.buypeer.com.br, pasta public_html. Preparar build de produção, configurar ambiente, upload via FTP e configurar domínio"
+2025-08-29 19:31:32,568 - agents.context_agent - INFO - 🔍 Obtendo contexto para: python3 run_buypeer_automation.py --task "ftp_deploy" --description "Deploy do BuyPeer no servidor FTP: IP 147.79.89.70, usuário u596780892.buypeer.com.br, pasta public_html. Preparar build de produção, configurar ambiente, upload via FTP e configurar domínio"
+2025-08-29 19:31:33,078 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-29 19:31:33,683 - agents.context_agent - ERROR - Erro na requisição Context7: 406
+2025-08-29 19:31:33,685 - agents.architect - INFO - 📋 Analisando solicitação: python3 run_buypeer_automation.py --task "ftp_deploy" --description "Deploy do BuyPeer no servidor FTP: IP 147.79.89.70, usuário u596780892.buypeer.com.br, pasta public_html. Preparar build de produção, configurar ambiente, upload via FTP e configurar domínio"
+2025-08-29 19:31:33,685 - agents.architect - WARNING - ⚠️ OpenAI não disponível, usando análise padrão
+2025-08-29 19:32:04,986 - agents.communication - INFO - 📋 Tarefa criada: task_1_20250829_193204 - Deploy completo do BuyPeer no servidor FTP
+2025-08-29 20:17:39,912 - agents.communication - INFO - 📋 Tarefa criada: task_1_20250829_201739 - Configurar DNS e domínio buypeer.com.br após deploy FTP
+2025-08-30 20:32:37,136 - agents.orchestrator - INFO - 🚀 Inicializando Agent Orchestrator...
+2025-08-30 20:32:37,141 - agents.mcp_config - INFO - 🔧 Inicializando MCP Manager...
+2025-08-30 20:32:37,142 - agents.mcp_config - INFO - ✅ Carregados 8 MCPs
+2025-08-30 20:32:37,174 - agents.orchestrator - INFO - 🔧 MCP Manager: success
+2025-08-30 20:32:37,175 - agents.orchestrator - INFO - 🔗 Communication Hub ativado
+2025-08-30 20:32:37,175 - agents.architect - INFO - 🏗️ Agente Arquiteto inicializado
+2025-08-30 20:32:37,175 - agents.mcp_config - INFO - 🔧 Inicializando MCP Manager...
+2025-08-30 20:32:37,176 - agents.mcp_config - INFO - ✅ Carregados 8 MCPs
+2025-08-30 20:32:37,206 - agents.communication - INFO - ✅ Agente architect registrado no Communication Hub
+2025-08-30 20:32:37,206 - agents.architect - INFO - ✅ Agente Arquiteto ativado com sucesso!
+2025-08-30 20:32:37,206 - agents.orchestrator - INFO - 🏗️ Architect Agent: success
+2025-08-30 20:32:37,206 - agents.base_agent - INFO - 🤖 Backend Agent inicializado
+2025-08-30 20:32:37,206 - agents.communication - INFO - ✅ Agente Backend Agent registrado no Communication Hub
+2025-08-30 20:32:37,206 - agents.orchestrator - INFO - 🔧 Backend Agent - Capacidades: ['APIs', 'Modelos', 'Controllers', 'Migrações']
+2025-08-30 20:32:37,206 - agents.base_agent - INFO - ✅ Backend Agent ativado com sucesso!
+2025-08-30 20:32:37,206 - agents.orchestrator - INFO - ✅ Agente backend registrado
+2025-08-30 20:32:37,206 - agents.base_agent - INFO - 🤖 Frontend Agent inicializado
+2025-08-30 20:32:37,207 - agents.communication - INFO - ✅ Agente Frontend Agent registrado no Communication Hub
+2025-08-30 20:32:37,207 - agents.orchestrator - INFO - 🔧 Frontend Agent - Capacidades: ['Vue.js', 'UI/UX', 'Componentes', 'Responsividade']
+2025-08-30 20:32:37,207 - agents.base_agent - INFO - ✅ Frontend Agent ativado com sucesso!
+2025-08-30 20:32:37,207 - agents.orchestrator - INFO - ✅ Agente frontend registrado
+2025-08-30 20:32:37,207 - agents.base_agent - INFO - 🤖 DevOps Agent inicializado
+2025-08-30 20:32:37,207 - agents.communication - INFO - ✅ Agente DevOps Agent registrado no Communication Hub
+2025-08-30 20:32:37,207 - agents.orchestrator - INFO - 🔧 DevOps Agent - Capacidades: ['Deploy', 'Docker', 'CI/CD', 'Monitoramento']
+2025-08-30 20:32:37,207 - agents.base_agent - INFO - ✅ DevOps Agent ativado com sucesso!
+2025-08-30 20:32:37,207 - agents.orchestrator - INFO - ✅ Agente devops registrado
+2025-08-30 20:32:37,207 - agents.base_agent - INFO - 🤖 QA Agent inicializado
+2025-08-30 20:32:37,208 - agents.communication - INFO - ✅ Agente QA Agent registrado no Communication Hub
+2025-08-30 20:32:37,208 - agents.orchestrator - INFO - 🔧 QA Agent - Capacidades: ['Testes', 'Validação', 'Performance', 'Segurança']
+2025-08-30 20:32:37,208 - agents.base_agent - INFO - ✅ QA Agent ativado com sucesso!
+2025-08-30 20:32:37,208 - agents.orchestrator - INFO - ✅ Agente qa registrado
+2025-08-30 20:32:37,208 - agents.base_agent - INFO - 🤖 Payments Agent inicializado
+2025-08-30 20:32:37,208 - agents.communication - INFO - ✅ Agente Payments Agent registrado no Communication Hub
+2025-08-30 20:32:37,208 - agents.orchestrator - INFO - 🔧 Payments Agent - Capacidades: ['Gateways', 'Transações', 'Webhooks', 'Compliance']
+2025-08-30 20:32:37,208 - agents.base_agent - INFO - ✅ Payments Agent ativado com sucesso!
+2025-08-30 20:32:37,209 - agents.orchestrator - INFO - ✅ Agente payments registrado
+2025-08-30 20:32:37,209 - agents.base_agent - INFO - 🤖 Security Agent inicializado
+2025-08-30 20:32:37,209 - agents.communication - INFO - ✅ Agente Security Agent registrado no Communication Hub
+2025-08-30 20:32:37,209 - agents.orchestrator - INFO - 🔧 Security Agent - Capacidades: ['Autenticação', 'Autorização', 'PCI', 'LGPD']
+2025-08-30 20:32:37,209 - agents.base_agent - INFO - ✅ Security Agent ativado com sucesso!
+2025-08-30 20:32:37,209 - agents.orchestrator - INFO - ✅ Agente security registrado
+2025-08-30 20:32:37,209 - agents.base_agent - INFO - 🤖 Data Agent inicializado
+2025-08-30 20:32:37,209 - agents.communication - INFO - ✅ Agente Data Agent registrado no Communication Hub
+2025-08-30 20:32:37,209 - agents.orchestrator - INFO - 🔧 Data Agent - Capacidades: ['Analytics', 'Relatórios', 'Dashboards', 'Otimização']
+2025-08-30 20:32:37,209 - agents.base_agent - INFO - ✅ Data Agent ativado com sucesso!
+2025-08-30 20:32:37,209 - agents.orchestrator - INFO - ✅ Agente data registrado
