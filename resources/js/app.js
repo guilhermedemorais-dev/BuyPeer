@@ -77,13 +77,4 @@ if (localStorage.getItem('vuex')) {
         store.dispatch('bootstrap').catch(()=>{});
     }
 }
-// Montagem resiliente: tenta #admin-app, #site-app, ou #app
-const target = document.querySelector('#admin-app')
-  ? '#admin-app'
-  : (document.querySelector('#site-app') ? '#site-app' : '#app');
-try {
-  console.log('[BuyPeer] mount on', target);
-  app.mount(target);
-} catch (e) {
-  console.error('[BuyPeer] mount failed', e);
-}
+app.mount('#app');
