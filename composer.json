@@ -9,6 +9,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "ext-exif": "*",
+        "ext-gd": "*",
         "ext-http": "*",
         "2checkoutv2/2checkout-php-sdk": "^1.0",
         "anandsiddharth/laravel-paytm-wallet": "^2.0",
