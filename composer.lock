@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ea9456f4d0cd5b4294f300981c4b3f1",
+    "content-hash": "b6f506c2b5e21d8c83c625fc4c463ba2",
     "packages": [
         {
             "name": "2checkoutv2/2checkout-php-sdk",
@@ -8483,12 +8483,12 @@
             "version": "3.0.40",
             "source": {
                 "type": "git",
-                "url": "https://github.com/srmklive/laravel-paypal.git",
+                "url": "https://github.com/blendbyte/laravel-paypal.git",
                 "reference": "1ddc49fd836a4785933ab953452152f3fedbac63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/srmklive/laravel-paypal/zipball/1ddc49fd836a4785933ab953452152f3fedbac63",
+                "url": "https://api.github.com/repos/blendbyte/laravel-paypal/zipball/1ddc49fd836a4785933ab953452152f3fedbac63",
                 "reference": "1ddc49fd836a4785933ab953452152f3fedbac63",
                 "shasum": ""
             },
@@ -8539,8 +8539,8 @@
                 "web service"
             ],
             "support": {
-                "issues": "https://github.com/srmklive/laravel-paypal/issues",
-                "source": "https://github.com/srmklive/laravel-paypal/tree/3.0.40"
+                "issues": "https://github.com/blendbyte/laravel-paypal/issues",
+                "source": "https://github.com/blendbyte/laravel-paypal/tree/3.0.40"
             },
             "time": "2025-02-25T21:38:18+00:00"
         },
@@ -14475,7 +14475,8 @@
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2",
-        "ext-http": "*"
+        "ext-exif": "*",
+        "ext-gd": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"
