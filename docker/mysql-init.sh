@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+mysql -u root -proot <<EOF
+CREATE DATABASE IF NOT EXISTS ${MYSQL_DATABASE:-buypeer};
+CREATE USER IF NOT EXISTS '${MYSQL_USER:-buypeer}'@'%' IDENTIFIED BY '${MYSQL_PASSWORD:-secret}';
+CREATE USER IF NOT EXISTS '${MYSQL_USER:-buypeer}'@'localhost' IDENTIFIED BY '${MYSQL_PASSWORD:-secret}';
+GRANT ALL PRIVILEGES ON *.* TO '${MYSQL_USER:-buypeer}'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO '${MYSQL_USER:-buypeer}'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EOF
+
+exec "$@"
