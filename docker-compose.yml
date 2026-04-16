@@ -23,6 +23,7 @@ services:
       DB_DATABASE: "${DB_DATABASE:-buypeer}"
       DB_USERNAME: "${DB_USERNAME:-buypeer}"
       DB_PASSWORD: "${DB_PASSWORD:-secret}"
+      DB_ROOT_PASSWORD: "${DB_ROOT_PASSWORD:-root}"
       CACHE_DRIVER: "${CACHE_DRIVER:-file}"
       SESSION_DRIVER: "${SESSION_DRIVER:-file}"
       QUEUE_CONNECTION: "${QUEUE_CONNECTION:-sync}"
@@ -41,11 +42,11 @@ services:
     volumes:
       - mysql-data:/var/lib/mysql
     healthcheck:
-      test: ["CMD-SHELL", "mysqladmin ping -h localhost -uroot -p$${MYSQL_ROOT_PASSWORD} --silent"]
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -p${DB_ROOT_PASSWORD:-root} --silent"]
       interval: 10s
       timeout: 5s
-      retries: 10
-      start_period: 30s
+      retries: 15
+      start_period: 60s
 
 volumes:
   app-storage:
